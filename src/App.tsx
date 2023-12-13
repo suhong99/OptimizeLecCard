@@ -7,7 +7,9 @@ import CardPage from '@pages/Card'
 import SigninPage from '@pages/Signin'
 import SignupPage from '@pages/Signup'
 
+import PrivateRoute from '@components/auth/PrivateRoute'
 import Navbar from '@shared/Navbar'
+import ApplyPage from '@pages/Apply'
 function App() {
   return (
     <div>
@@ -20,6 +22,14 @@ function App() {
           <Route path="/test" Component={TestPage} />
           <Route path="/signin" Component={SigninPage} />
           <Route path="/signup" Component={SignupPage} />
+          <Route
+            path="/apply/:id"
+            element={
+              <PrivateRoute>
+                <ApplyPage />
+              </PrivateRoute>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>

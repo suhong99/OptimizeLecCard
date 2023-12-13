@@ -31,7 +31,6 @@ export async function getCards(pageParam?: QuerySnapshot<Card>) {
 
 export async function getCard(id: string) {
   const snapshot = await getDoc(doc(store, COLLECTIONS.CARD, id))
-
   return {
     id,
     ...(snapshot.data() as Card),
