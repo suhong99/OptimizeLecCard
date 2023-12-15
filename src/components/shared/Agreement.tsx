@@ -95,11 +95,3 @@ const agreementContainerStyles = css`
 `
 
 export default Agreement
-
-/**
- * <Agreement>
- *  <Agreement.Title> 약관에 모두 동의 </Agreement.Title>
- *  <Agreement.Description> 약관1 </Agreement.Description>
- *  <Agreement.Description> 약관2 </Agreement.Description>
- * </Agreement>
- */
