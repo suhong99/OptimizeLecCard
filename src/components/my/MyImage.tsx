@@ -17,8 +17,6 @@ function MyImage({ size = 40, mode = 'default' }: { size?: number; mode?: 'defau
   const handleUploadImage = async (e: ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files
 
-    console.log('files', files)
-
     const currentUser = getAuth(app).currentUser
 
     if (files == null || user == null || currentUser == null) {
