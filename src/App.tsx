@@ -10,6 +10,7 @@ import SignupPage from '@pages/Signup'
 import PrivateRoute from '@components/auth/PrivateRoute'
 import Navbar from '@shared/Navbar'
 import ApplyPage from '@pages/Apply'
+import { Suspense } from 'react'
 function App() {
   return (
     <div>
@@ -26,7 +27,9 @@ function App() {
             path="/apply/:id"
             element={
               <PrivateRoute>
-                <ApplyPage />
+                <Suspense fallback={<></>}>
+                  <ApplyPage />
+                </Suspense>
               </PrivateRoute>
             }
           />
