@@ -48,7 +48,6 @@ function CardPage() {
 
   const { name, corpName, promotion, tags, benefit } = data
 
-  console.log(data, ' 머지')
   const subTitle = promotion != null ? removeHtmlTags(promotion.title) : tags.join(', ')
 
   return (
