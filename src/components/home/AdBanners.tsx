@@ -31,12 +31,10 @@ function AdBanners() {
         {data?.map((banner) => {
           return (
             <SwiperSlide key={banner.id}>
-              <Link to={banner.link}>
-                <Flex direction="column" css={bannerContainerStyles}>
-                  <Text bold={true}>{banner.title}</Text>
-                  <Text typography="t7">{banner.description}</Text>
-                </Flex>
-              </Link>
+              <Flex direction="column" css={bannerContainerStyles}>
+                <Text bold={true}>{banner.title}</Text>
+                <Text typography="t7">{banner.description}</Text>
+              </Flex>
             </SwiperSlide>
           )
         })}
