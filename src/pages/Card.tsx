@@ -49,7 +49,6 @@ function CardPage() {
   const { name, corpName, promotion, tags, benefit } = data
 
   const subTitle = promotion != null ? removeHtmlTags(promotion.title) : tags.join(', ')
-
   return (
     <div>
       <Top title={`${corpName} ${name}`} subTitle={subTitle} />
@@ -124,6 +123,20 @@ function IconCheck() {
 }
 
 function removeHtmlTags(text: string) {
+  // let output = ''
+  // for (let i = 0; i < text.length; i += 1) {
+  //   if (text[i] === '<') {
+  //     for (let j = i + 1; j < text.length; j += 1) {
+  //       if (text[j] === '>') {
+  //         i = j
+  //         break
+  //       }
+  //     }
+  //   } else {
+  //     output += text[i]
+  //   }
+  // }
+  // return output
   return text.replace(/<\/?[^>]+(>|$)/g, '')
 }
 
