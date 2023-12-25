@@ -26,6 +26,8 @@ function ListRow({ as = 'li', left, contents, right, withArrow, onClick }: ListR
 
 const listRowContainerStyles = css`
   padding: 8px 24px;
+  cursor: pointer;
+  margin-bottom: 8px;
 `
 
 const listRowLeftStyles = css`
