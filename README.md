@@ -20,7 +20,7 @@ Apply,ApplyDone, Mypage를 이용 가능
   
 - lightHouse로 CLS 측정 및 Skeleton UI를 활용하여 최적화 [https://ungumungum.tistory.com/74]
   
-- Review 컴퍼넌트를 react-intersection-observer을 통해서 관측될 때, 랜더링하여서 Card상세페이지의 초기 랜더링 속도 향상
+- Review 컴퍼넌트를 react-intersection-observer을 통해서 '관측될 때 랜더링하여' Card상세페이지의 초기 랜더링 속도 향상
   
 -  개발자 도구의 Performance 기능을 통하여서,  병목 코드 확인  후 코드 개선 및 성능 비교 (removeHtmlTage함수) --> 문자열의 length가 368000일 경우 23.8밀리초->6.8밀리초로 감소
 
