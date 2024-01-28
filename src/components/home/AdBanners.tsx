@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 import { useQuery } from 'react-query'
-import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { getAdBanners } from '@remote/adBanner'
